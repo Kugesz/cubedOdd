@@ -1,0 +1,5 @@
+function cubeOdd(arr) {
+  if (arr.some(item => typeof item !== 'number')) {return undefined;}
+  sum = arr.reduce((sum, number) => (Math.pow(number, 3)%2 !== 0) ? sum + Math.pow(number, 3) : sum, 0);
+  return sum;
+}
